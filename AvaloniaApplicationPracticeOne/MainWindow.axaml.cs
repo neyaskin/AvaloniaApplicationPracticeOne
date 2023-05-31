@@ -3,6 +3,7 @@ using System.Net.Mime;
 using Avalonia.Controls;
 using Avalonia.Interactivity;
 using AvaloniaApplicationPracticeOne.Models;
+using Microsoft.EntityFrameworkCore;
 
 namespace AvaloniaApplicationPracticeOne;
 
@@ -33,7 +34,7 @@ public partial class MainWindow : Window
             var userAuth = Service.GetDbContext().Users
                 .FirstOrDefault(u => u.Login == loginTBox.Text && u.Password == passwordTBox.Text);
             // Если мы находим пользователя с такими данными и его роль "Пользователь"
-            if (userAuth != null && userAuth.IdRoleNavigation.Name == "Пользователь")
+            if (userAuth != null && userAuth.IdRole == 1)
             {
                 // Откроем окно
                 new UserWindow().Show();
@@ -41,7 +42,7 @@ public partial class MainWindow : Window
                 Close();
             } 
             // Если мы находим пользователя с такими данными и его роль "Администратор"
-            else if (userAuth != null && userAuth.IdRoleNavigation.Name == "Администратор")
+            else if (userAuth != null && userAuth.IdRole == 2)
             {
                 // Откроем окно
                 new AdminWindow().Show();
