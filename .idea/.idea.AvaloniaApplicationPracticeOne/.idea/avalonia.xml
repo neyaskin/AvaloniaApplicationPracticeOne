@@ -4,6 +4,7 @@
     <option name="projectPerEditor">
       <map>
         <entry key="AvaloniaApplicationPracticeOne/AdminWindow.axaml" value="AvaloniaApplicationPracticeOne/AvaloniaApplicationPracticeOne.csproj" />
+        <entry key="AvaloniaApplicationPracticeOne/App.axaml" value="AvaloniaApplicationPracticeOne/AvaloniaApplicationPracticeOne.csproj" />
         <entry key="AvaloniaApplicationPracticeOne/MainWindow.axaml" value="AvaloniaApplicationPracticeOne/AvaloniaApplicationPracticeOne.csproj" />
         <entry key="AvaloniaApplicationPracticeOne/RegistrationWindow.axaml" value="AvaloniaApplicationPracticeOne/AvaloniaApplicationPracticeOne.csproj" />
         <entry key="AvaloniaApplicationPracticeOne/UserWindow.axaml" value="AvaloniaApplicationPracticeOne/AvaloniaApplicationPracticeOne.csproj" />
